@@ -15,13 +15,13 @@ Get all details about the CLI by executing `python TFTTool.py -h`.
 To simply convert a TFT file into a text file, use 
 
 ```
-python TFTTool.py -i TFT_SOURCE -o TEXT_FILE
+python TFTTool.py -i Example/NX4832K035.tft -o Example/NX4832K035.txt
 ```
 
 To change the device model, use 
 
 ```
-python TFTTool.py -i TFT_SOURCE -t NEW_MODEL
+python TFTTool.py -i Example/NX4832K035.tft -t TJC4832K035
 ```
 
 Nextion and TJC run slightly different editor version numbers. So it's possible that the converted TFT file can't be opened in the new editor. This can be fixed by using the `-e/--editor-version` command. It allows you to manually specify the editor version.  One example would be when converting a Nextion file created with v1.63.3. TJC only released a v1.63.1 (released at the same time, so likely identical). So you'd modify the previous command line input to this:
