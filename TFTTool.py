@@ -1,10 +1,5 @@
 """
 TFTTool by Max Zuidberg
-
-This Source Code Form is subject to the terms of the Mozilla Public
-License, v. 2.0. If a copy of the MPL was not distributed with this
-file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
 """
 
 import sys
@@ -361,11 +356,9 @@ class TFTFile:
          "NX4827T043_011": 0x1eb276b6,
          "NX8048T050_011": 0x3b66b524,
          "NX8048T070_011": 0xc079789d,
-
          "NX3224F024_011": 0,
          "NX3224F028_011": 0,
          "NX4832F035_011": 0,
-
          "NX3224K024_011": 0x1324a9d7,
          "NX3224K028_011": 0xe8094ae5,
          "NX4024K032_011": 0x45c41179,
@@ -373,13 +366,12 @@ class TFTFile:
          "NX4827K043_011": 0x60e7e153,
          "NX8048K050_011": 0x453322c1,
          "NX8048K070_011": 0xbe2cef78,
-
          "NX4827P043_011": 0xcdc7c258,
          "NX8048P050_011": 0xe81301ca,
          "NX8048P070_011": 0x130ccc73,
+         "NX8048X550_011": 0,
          "NX1060P070_011": 0x18a58690,
          "NX1060P101_011": 0xdcb511f5,
-
         "TJC3224T022_011": 0x189a66fb,
         "TJC3224T024_011": 0x54cd4ea3,
         "TJC3224T028_011": 0xafe0ad91,
@@ -388,14 +380,12 @@ class TFTFile:
         "TJC4827T043_011": 0x270e0627,
         "TJC8048T050_011": 0x02dac5b5,
         "TJC8048T070_011": 0xf9c5080c,
-
         "TJC1612T118_011": 0,
         "TJC3224T122_011": 0,
         "TJC3224T124_011": 0,
         "TJC3224T128_011": 0,
         "TJC4024T132_011": 0,
         "TJC4832T135_011": 0,
-
         "TJC3224K022_011": 0x66cff11e,
         "TJC3224K024_011": 0x2a98d946,
         "TJC3224K028_011": 0xd1b53a74,
@@ -404,7 +394,6 @@ class TFTFile:
         "TJC4832K035_011": 0xac42ce46,
         "TJC8048K050_011": 0x7c8f5250,
         "TJC8048K070_011": 0x87909fe9,
-
         "TJC4848X340_011": 0x9ea280d2,
         "TJC4827X343_011": 0x767c3bae,
         "TJC8048X343_011": 0x5eb5f196,
@@ -413,7 +402,6 @@ class TFTFile:
         "TJC1060X370_011": 0xa31e7f66,
         "TJC8060X380_011": 0xd9b92b5c,
         "TJC1060X3A1_011": 0x2c3a9902,
-
         "TJC4848X540_011": 0x8e472af9,
         "TJC4827X543_011": 0x66999185,
         "TJC8048X543_011": 0x4e505bbd,
@@ -776,4 +764,3 @@ if __name__ == '__main__':
             outputPath = outputPath.with_suffix(".tft")
         with open(outputPath, "wb") as f:
             f.write(tft.raw)
-
