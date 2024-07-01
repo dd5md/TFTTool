@@ -345,7 +345,6 @@ class HeaderData:
             raw += struct.pack("<I", self.crc)
         return raw
 
-
 class TFTFile:
 
     _modelXORs = {
@@ -369,7 +368,6 @@ class TFTFile:
          "NX4827P043_011": 0xcdc7c258,
          "NX8048P050_011": 0xe81301ca,
          "NX8048P070_011": 0x130ccc73,
-         "NX8048X550_011": 0,
          "NX1060P070_011": 0x18a58690,
          "NX1060P101_011": 0xdcb511f5,
         "TJC3224T022_011": 0x189a66fb,
