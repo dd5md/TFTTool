@@ -167,6 +167,7 @@ all_instruction_sets = [
           'tjc-0.58',
           'tjc-1.63.1',
           'tjc-1.64.1',
+          'tjc-1.65.1',
           'tjc-1.66.1',
           'tjc-1.66.2',
           'tjc-1.66.3'
